@@ -6,8 +6,8 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/mapgoblin
-    username: mapgoblin
+    url: jdbc:postgresql://mapgoblindb.cvkrwfrbk6tr.ap-northeast-2.rds.amazonaws.com/mapgoblinDB
+    username: postgres
     password: mapgoblin
     driver-class-name: org.postgresql.Driver
 
