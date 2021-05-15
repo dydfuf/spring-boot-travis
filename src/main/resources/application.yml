@@ -5,11 +5,21 @@ server:
     context-path: /api
 
 spring:
+  datasource:
+    url: jdbc:postgresql://mapgoblindb.cvkrwfrbk6tr.ap-northeast-2.rds.amazonaws.com:5432/mapgoblin
+    username: postgres
+    password: mapgoblin
+    driver-class-name: org.postgresql.Driver
+
   jpa:
+    hibernate:
+      ddl-auto: create
     properties:
       hibernate:
         format_sql: true
         default_batch_fetch_size: 100
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     # generate-ddl: true
 
   mail:
