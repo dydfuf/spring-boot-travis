@@ -3,10 +3,6 @@
 REPOSITORY=/home/ec2-user/backend
 PROJECT_NAME=Springboot
 
-echo "> Build 파일 복사"
-
-cp $REPOSITORY/zip/*.jar $REPOSITORY/
-
 echo "> 현재 구동중인 애플리케이션 pid확인"
 
 CURRENT_PID=$(pgrep -fl $PROJECT_NAME | grep jar | awk '{print $1}')
