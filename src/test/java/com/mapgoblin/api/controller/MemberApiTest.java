@@ -65,4 +65,5 @@ class MemberApiTest {
         actions.andExpect(status().isOk())
                 .andDo(print());
     }
+
 }
