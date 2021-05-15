@@ -6,14 +6,14 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://mapgoblindb.cvkrwfrbk6tr.ap-northeast-2.rds.amazonaws.com/mapgoblinDB
+    url: jdbc:postgresql://mapgoblindb.cvkrwfrbk6tr.ap-northeast-2.rds.amazonaws.com:5432/mapgoblin
     username: postgres
     password: mapgoblin
     driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     properties:
       hibernate:
         format_sql: true
