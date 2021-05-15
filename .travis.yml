@@ -6,6 +6,11 @@ branches:
   only:
     - master
 
+addons:
+  postgresql: "9.6"
+services:
+  - postgresql
+
 # Travis CI 서버의 Home
 cache:
   directories:
